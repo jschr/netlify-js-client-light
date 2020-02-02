@@ -22,7 +22,7 @@
     "./src/deploy/index.js": "./src/deploy/index.browser.js"
   },
   "scripts": {
-    "prepublishOnly": "run-s build && git push && git push --tags && gh-release",
+    "prepublishOnly": "run-s build",
     "ci": "run-s test build",
     "test": "run-s test:* test:dev:*",
     "test-ci": "run-s test:* test:ci:*",
